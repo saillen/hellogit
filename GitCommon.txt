@@ -68,6 +68,13 @@ ssh -T
 git remote origin git@github.com:saillen/hellogit.git
 #远程库的名字就是origin，这是Git默认的叫法，也可以改成别的，但是origin这个名字一看就知道是远程库。
 
+#首次推送带有-u参数
+git push -u origin master
+#剩下的推送，将master内容推送到origin分支（远程仓库）
+git push origin master
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
