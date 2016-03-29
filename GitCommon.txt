@@ -1,6 +1,6 @@
 Git 命令： 
 git init
-git commit -m ""
+git commit -m "" 存储一个当前工作区的快照，-m表示提交参数附加message
 git config --global user.name ""
 git config --global user.email ""
 
@@ -8,3 +8,5 @@ git add <filename> ： 空格分开，可以写多个
 
 git status : 查看工作区的状态
 git diff ： 比较修改的文件
+
+git log ： 查看提交记录，也就是查看有多少快照
