@@ -53,3 +53,26 @@ git rm 后需要git commit
 如果想恢复删除的文件，可以git checkout -- filename
 
 ------------------------------------------------------------------------------------------------------------------------------------------
+
+先产生SSH秘钥：
+
+ssh-keygen -t rsa -C "qiesai@163.com"
+#注意点：在ssh-keygen过程中
+第一步：要输入ssh key的存放地址，这个过程如果自己改动了，则ssh文件不会存储到c://<user>/<username>/.ssh文件夹里面了。会导致后面的git push 出问题
+如果想自己指定
+则可以按照下面的方式解决
+ssh -T 
+
+
+#推送Git资源
+git remote origin git@github.com:saillen/hellogit.git
+#远程库的名字就是origin，这是Git默认的叫法，也可以改成别的，但是origin这个名字一看就知道是远程库。
+
+
+
+
+
+
+
+
+
