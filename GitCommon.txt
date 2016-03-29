@@ -1,0 +1,6 @@
+Git 命令： 
+git init
+git commit -m ""
+git config --global user.name ""
+git config --global user.email ""
+
