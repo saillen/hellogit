@@ -10,3 +10,9 @@ git status : 查看工作区的状态
 git diff ： 比较修改的文件
 
 git log ： 查看提交记录，也就是查看有多少快照
+
+HEAD ： 这是一个Git的指针，指向当前的工作区的版本。
+
+git reset --hard "" : 可以快速回滚到其他版本。一般来说可以写commit id（用git log查看） 也可以写HEAD^ 或者HEAD~20(前20个版本)
+
+git reflog ： 查看历史命令，以便确定要回滚到哪个版本
