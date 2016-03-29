@@ -88,5 +88,14 @@ git checkout -d dev 相当于：
 git branch dev
 git checkout dev
 
+git 鼓励使用分支
 
+git branch : 查看当前分支
+git branch <name> : 创建分支
+git branch -d name : 删除分支
+git merge <name> 合并分支：Fast-forward模式
+git checkout -b name : 创建并切换分支
+
+------------------------------------------------------------------------------------------------------------------------------------------
+git 冲突
 
