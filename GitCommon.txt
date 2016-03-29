@@ -31,6 +31,17 @@ git checkout -- filename  用来丢弃当前修改：
 （2）文件还没add到stage中，则checkout -- 后就回到和版本库一模一样的状态；
 （3）总之，就是让这个文件回到最近一次git commit或git add时的状态。
 
+PS : 1.撤销工作区的修改符合就近原则：
+撤销工作区修改，如果缓冲区有该文件，则checkout -- file 会将缓冲区的内容覆盖到工作区，此时工作区和缓冲区文件内容相同，因此工作区是干净的，并没有未add的文件。
+
+撤销工作区修改，如果缓冲区没有该文件，则checkout -- file命令会继续向上找，找到版本库中的该文件，此时使用版本库中的文件覆盖工作区，工作区不干净，因为有未提交的文件（从版本库中覆盖修改的文件）。
+
+撤销缓冲区，使用git rest HEAD -- file ，则会将缓冲区的内容回退到工作区，此时缓冲区被该文件被移除，工作区不干净，有未add的文件（从缓冲区移除了，状态就变成了未add）
+
+
+
+
+
 git reset HEAD filename  把暂存区的修改撤销掉（unstage）
 （1）git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区。当我们用HEAD时，表示最新的版本。
 （2）版本回退：git reset HEAD^ or git reset HEAD~2 or git rest commitId
