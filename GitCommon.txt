@@ -4,3 +4,5 @@ git commit -m ""
 git config --global user.name ""
 git config --global user.email ""
 
+git add <filename> ： 空格分开，可以写多个
+
