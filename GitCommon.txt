@@ -75,6 +75,13 @@ git push origin master
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
+使用clone命令
+git clone git@github.com:saillen/MyJavaWebLib.git
+
+还可以使用http或者https协议，默认是ssh协议，即：git://
+git协议最快
+
+
 
 
 
