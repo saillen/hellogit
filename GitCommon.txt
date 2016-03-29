@@ -6,3 +6,5 @@ git config --global user.email ""
 
 git add <filename> ： 空格分开，可以写多个
 
+git status : 查看工作区的状态
+git diff ： 比较修改的文件
